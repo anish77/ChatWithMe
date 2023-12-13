@@ -16,6 +16,9 @@
 		9F2081BA2B29A78500AE878D /* ChatWithMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2081B92B29A78500AE878D /* ChatWithMeTests.swift */; };
 		9F2081C42B29A78500AE878D /* ChatWithMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2081C32B29A78500AE878D /* ChatWithMeUITests.swift */; };
 		9F2081C62B29A78500AE878D /* ChatWithMeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2081C52B29A78500AE878D /* ChatWithMeUITestsLaunchTests.swift */; };
+		9F906EC72B29B61800E46D98 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F906EC62B29B61800E46D98 /* RegisterViewController.swift */; };
+		9F906EC92B29BC9300E46D98 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F906EC82B29BC9300E46D98 /* ChatViewController.swift */; };
+		9F906ECB2B29BDD200E46D98 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F906ECA2B29BDD200E46D98 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		9F2081BF2B29A78500AE878D /* ChatWithMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatWithMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2081C32B29A78500AE878D /* ChatWithMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWithMeUITests.swift; sourceTree = "<group>"; };
 		9F2081C52B29A78500AE878D /* ChatWithMeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWithMeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9F906EC62B29B61800E46D98 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9F906EC82B29BC9300E46D98 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		9F906ECA2B29BDD200E46D98 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +107,9 @@
 			children = (
 				9F2081A22B29A78400AE878D /* AppDelegate.swift */,
 				9F2081A42B29A78400AE878D /* SceneDelegate.swift */,
-				9F2081A62B29A78400AE878D /* ViewController.swift */,
-				9F2081A82B29A78400AE878D /* Main.storyboard */,
+				9F2081D42B29A83700AE878D /* Models */,
+				9F2081D22B29A80800AE878D /* Views */,
+				9F2081D32B29A82A00AE878D /* Controllers */,
 				9F2081AB2B29A78500AE878D /* Assets.xcassets */,
 				9F2081AD2B29A78500AE878D /* LaunchScreen.storyboard */,
 				9F2081B02B29A78500AE878D /* Info.plist */,
@@ -125,6 +132,32 @@
 				9F2081C52B29A78500AE878D /* ChatWithMeUITestsLaunchTests.swift */,
 			);
 			path = ChatWithMeUITests;
+			sourceTree = "<group>";
+		};
+		9F2081D22B29A80800AE878D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F2081A82B29A78400AE878D /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9F2081D32B29A82A00AE878D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F2081A62B29A78400AE878D /* ViewController.swift */,
+				9F906EC62B29B61800E46D98 /* RegisterViewController.swift */,
+				9F906EC82B29BC9300E46D98 /* ChatViewController.swift */,
+				9F906ECA2B29BDD200E46D98 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9F2081D42B29A83700AE878D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F906ECB2B29BDD200E46D98 /* LoginViewController.swift in Sources */,
 				9F2081A72B29A78400AE878D /* ViewController.swift in Sources */,
 				9F2081A32B29A78400AE878D /* AppDelegate.swift in Sources */,
 				9F2081A52B29A78400AE878D /* SceneDelegate.swift in Sources */,
+				9F906EC92B29BC9300E46D98 /* ChatViewController.swift in Sources */,
+				9F906EC72B29B61800E46D98 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
