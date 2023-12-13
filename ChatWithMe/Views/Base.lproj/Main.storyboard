@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uho-nW-EmR">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
@@ -27,6 +27,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="dA8-Tu-8CM" kind="show" id="HXZ-t4-dQm"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="09j-AG-iX4">
                                 <rect key="frame" x="-3.6666666666666572" y="176" width="400.33333333333326" height="200"/>
@@ -49,6 +52,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="7Ok-bE-Wib" kind="show" id="RnK-gq-CWw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -66,10 +72,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2yH-u6-Xu5" secondAttribute="trailing" constant="10" id="vSt-bT-QOy"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fmI-EW-oDz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="106" y="-163"/>
+            <point key="canvasLocation" x="1031.2977099236641" y="-163.38028169014086"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="3WS-VH-XhJ">
@@ -80,7 +87,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="o3l-99-EHU">
-                                <rect key="frame" x="0.0" y="59" width="393" height="659"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="615"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="XGU-dS-aVc">
@@ -141,6 +148,7 @@
                             <constraint firstItem="OOI-AH-C0h" firstAttribute="leading" secondItem="ZTi-lM-q4e" secondAttribute="leading" id="fgv-Kc-Rym"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="dR1-cB-kvM"/>
                     <connections>
                         <outlet property="messageTextField" destination="B6W-yW-pBq" id="7wC-mh-QHA"/>
                         <outlet property="tableView" destination="o3l-99-EHU" id="zdc-1l-y98"/>
@@ -148,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ucp-YX-I29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2122.9007633587785" y="-231.69014084507043"/>
+            <point key="canvasLocation" x="3049.6183206106871" y="-231.69014084507043"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="Tus-yF-DRF">
@@ -159,7 +167,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4DI-V1-KfK">
-                                <rect key="frame" x="30" y="109" width="333" height="45"/>
+                                <rect key="frame" x="30" y="153" width="333" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JbS-lj-67X">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="45"/>
@@ -177,7 +185,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbX-Yc-nG0">
-                                <rect key="frame" x="30" y="174" width="333" height="45"/>
+                                <rect key="frame" x="30" y="218" width="333" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWd-52-L3V">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="45"/>
@@ -196,7 +204,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaL-a1-W1i">
-                                <rect key="frame" x="20" y="239" width="353" height="50"/>
+                                <rect key="frame" x="20" y="283" width="353" height="50"/>
                                 <color key="tintColor" red="0.25098040700000002" green="0.56862747670000002" blue="0.94117647410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Register">
@@ -221,16 +229,18 @@
                             <constraint firstItem="cbX-Yc-nG0" firstAttribute="top" secondItem="4DI-V1-KfK" secondAttribute="bottom" constant="20" id="pDP-xm-3Qn"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="BGS-p6-00U"/>
                     <connections>
                         <outlet property="emailTextField" destination="JbS-lj-67X" id="5da-Sh-Ko2"/>
                         <outlet property="emailView" destination="4DI-V1-KfK" id="Blg-Sp-a7J"/>
                         <outlet property="passwordTextField" destination="tWd-52-L3V" id="EyI-6R-2Sg"/>
                         <outlet property="passwordView" destination="cbX-Yc-nG0" id="Pfb-J4-HGm"/>
+                        <segue destination="Cle-qg-2p3" kind="show" identifier="RegisterToChat" id="y8H-ml-37d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1J-oO-Wzv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1105" y="-551"/>
+            <point key="canvasLocation" x="2031.2977099236641" y="-551.4084507042254"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="sB8-Nu-u4e">
@@ -241,7 +251,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wms-ZH-3oP">
-                                <rect key="frame" x="30" y="109" width="333" height="45"/>
+                                <rect key="frame" x="30" y="153" width="333" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jaz-iV-xGh">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="45"/>
@@ -259,7 +269,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3k-DT-rwI">
-                                <rect key="frame" x="30" y="174" width="333" height="45"/>
+                                <rect key="frame" x="30" y="218" width="333" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IEi-pA-NrN">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="45"/>
@@ -278,7 +288,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeO-iu-5Cu">
-                                <rect key="frame" x="20" y="239" width="353" height="50"/>
+                                <rect key="frame" x="20" y="283" width="353" height="50"/>
                                 <color key="tintColor" red="0.25098040700000002" green="0.56862747670000002" blue="0.94117647410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log In">
@@ -287,7 +297,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="loginPressedButton:" destination="dA8-Tu-8CM" eventType="touchUpInside" id="gf1-pK-DRc"/>
-                                    <action selector="registerPressed:" destination="dA8-Tu-8CM" eventType="touchUpInside" id="owh-Xx-zoV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -305,18 +314,39 @@
                             <constraint firstItem="EeO-iu-5Cu" firstAttribute="top" secondItem="g3k-DT-rwI" secondAttribute="bottom" constant="20" id="xA5-pf-lAp"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sr6-vk-uA7"/>
                     <connections>
                         <outlet property="emailTextField" destination="jaz-iV-xGh" id="MOl-hY-iCT"/>
-                        <outlet property="emailView" destination="Wms-ZH-3oP" id="aqB-IS-rSA"/>
                         <outlet property="passwordTextField" destination="IEi-pA-NrN" id="5Hd-hN-Mpm"/>
-                        <outlet property="passwordView" destination="g3k-DT-rwI" id="03x-5S-11T"/>
+                        <segue destination="Cle-qg-2p3" kind="show" identifier="LoginToChat" id="1R3-3g-RjN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0FO-lw-jJe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1105" y="409"/>
+            <point key="canvasLocation" x="2031.2977099236641" y="408.45070422535213"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7Ih-fl-wei">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Uho-nW-EmR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OoZ-pJ-dsp">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Bvt-tH-c5K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XPF-mN-apt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.58015267175573" y="-163.38028169014086"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="1R3-3g-RjN"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="chat" width="94" height="94"/>
         <image name="invia2" width="50" height="50"/>
