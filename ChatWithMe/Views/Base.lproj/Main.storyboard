@@ -31,11 +31,8 @@
                                     <segue destination="dA8-Tu-8CM" kind="show" id="HXZ-t4-dQm"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="09j-AG-iX4">
-                                <rect key="frame" x="-3.6666666666666572" y="176" width="400.33333333333326" height="200"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="bsZ-V7-EPi">
-                                <rect key="frame" x="121.66666666666669" y="376" width="150" height="150"/>
+                                <rect key="frame" x="121.66666666666669" y="373" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="bhN-o8-K4K"/>
                                     <constraint firstAttribute="height" constant="150" id="qc4-MS-XWU"/>
@@ -56,6 +53,12 @@
                                     <segue destination="7Ok-bE-Wib" kind="show" id="RnK-gq-CWw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat With Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UW8-HE-OES">
+                                <rect key="frame" x="56" y="249" width="281.33333333333331" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <color key="textColor" red="0.25098040700000002" green="0.56862747670000002" blue="0.94117647410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -64,15 +67,18 @@
                             <constraint firstItem="bsZ-V7-EPi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DYe-70-Eo0"/>
                             <constraint firstItem="WI3-BF-9TU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="GVO-ga-MSa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WI3-BF-9TU" secondAttribute="trailing" constant="10" id="Sck-uV-CNV"/>
-                            <constraint firstItem="09j-AG-iX4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WCu-Zh-OVU"/>
                             <constraint firstItem="2yH-u6-Xu5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="X1n-H6-66S"/>
-                            <constraint firstItem="bsZ-V7-EPi" firstAttribute="top" secondItem="09j-AG-iX4" secondAttribute="bottom" id="Xqw-XY-ecD"/>
                             <constraint firstItem="2yH-u6-Xu5" firstAttribute="top" secondItem="WI3-BF-9TU" secondAttribute="bottom" constant="10" id="agF-ef-uHk"/>
-                            <constraint firstItem="09j-AG-iX4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="awJ-4h-6Yj"/>
+                            <constraint firstItem="bsZ-V7-EPi" firstAttribute="top" secondItem="UW8-HE-OES" secondAttribute="bottom" constant="70" id="ain-R4-ZW3"/>
+                            <constraint firstItem="UW8-HE-OES" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oQg-9z-h3m"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2yH-u6-Xu5" secondAttribute="trailing" constant="10" id="vSt-bT-QOy"/>
+                            <constraint firstItem="UW8-HE-OES" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="vnN-ri-6xg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fmI-EW-oDz"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="UW8-HE-OES" id="Avs-YO-bpm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -350,7 +356,6 @@
     <resources>
         <image name="chat" width="94" height="94"/>
         <image name="invia2" width="50" height="50"/>
-        <image name="logo" width="400" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
